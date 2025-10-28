@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000;
+    color: #e0e6ed;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a0aec0;
+    font-weight: 300;
+}
+
+.info-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.description {
+    line-height: 1.6;
+    color: #cbd5e0;
+    font-size: 1.05rem;
+}
+
+.distance-card,
+.velocity-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #f7fafc;
+    text-align: center;
+}
+
+.distance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.distance-item {
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 15px;
+    padding: 25px 15px;
+    text-align: center;
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.distance-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(102, 126, 234, 0.6);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+}
+
+.distance-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a0aec0;
+    margin-bottom: 15px;
+}
+
+.distance-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 5px;
+    font-family: 'Courier New', monospace;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.distance-unit {
+    font-size: 1rem;
+    color: #cbd5e0;
+    font-weight: 300;
+}
+
+.velocity-info {
+    text-align: center;
+    padding: 20px;
+    background: rgba(118, 75, 162, 0.1);
+    border-radius: 15px;
+    border: 2px solid rgba(118, 75, 162, 0.3);
+}
+
+.velocity-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #764ba2;
+    font-family: 'Courier New', monospace;
+    display: inline-block;
+}
+
+.velocity-unit {
+    font-size: 1.5rem;
+    color: #cbd5e0;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.velocity-note {
+    text-align: center;
+    margin-top: 15px;
+    color: #e0a0c0;
+    font-style: italic;
+}
+
+.stats-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #f7fafc;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 15px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #a0aec0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 1.3rem;
+    color: #667eea;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #718096;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .distance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .distance-value {
+        font-size: 0.95rem;
+    }
+
+    .velocity-value {
+        font-size: 2.2rem;
+    }
+}

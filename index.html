@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M31 Andromeda Galaxy Distance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>M31 Andromeda Galaxy</h1>
+            <p class="subtitle">Real-Time Distance Calculator</p>
+        </header>
+
+        <main>
+            <div class="info-section">
+                <p class="description">
+                    The Andromeda Galaxy (M31) is our nearest major galactic neighbor and is currently
+                    approaching the Milky Way. Below is the calculated distance in real-time.
+                </p>
+            </div>
+
+            <div class="distance-card">
+                <h2>Current Distance from the Sun</h2>
+                <div class="distance-grid">
+                    <div class="distance-item">
+                        <div class="distance-label">Kilometers</div>
+                        <div class="distance-value" id="distance-km">—</div>
+                        <div class="distance-unit">km</div>
+                    </div>
+                    <div class="distance-item">
+                        <div class="distance-label">Light-Years</div>
+                        <div class="distance-value" id="distance-ly">—</div>
+                        <div class="distance-unit">ly</div>
+                    </div>
+                    <div class="distance-item">
+                        <div class="distance-label">Parsecs</div>
+                        <div class="distance-value" id="distance-pc">—</div>
+                        <div class="distance-unit">pc</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="velocity-card">
+                <h2>Approach Velocity</h2>
+                <div class="velocity-info">
+                    <div class="velocity-value" id="velocity-kms">—</div>
+                    <div class="velocity-unit">km/s</div>
+                </div>
+                <p class="velocity-note">M31 is approaching the Milky Way</p>
+            </div>
+
+            <div class="stats-section">
+                <h3>Additional Information</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Time since page load</div>
+                        <div class="stat-value" id="elapsed-time">0s</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Distance closed</div>
+                        <div class="stat-value" id="distance-closed">0 km</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Reference epoch</div>
+                        <div class="stat-value" id="reference-date">—</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Data based on current astronomical measurements. Base distance: 2.537 million light-years (2024 epoch)</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
